@@ -7,8 +7,6 @@ export const PRODUCT_CONTEXT = createContext("");
 const DataContext = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  console.log(state);
-
   useEffect(() => {
     fetch("../../public/glasses.json")
       .then((res) => res.json())
