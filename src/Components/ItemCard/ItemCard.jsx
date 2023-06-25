@@ -1,6 +1,5 @@
 import React, { useContext, useReducer } from "react";
 import { Link } from "react-router-dom";
-import reducer, { initialState } from "../../Reducer/reducer";
 import { actionTypes } from "../../Reducer/actions";
 import { PRODUCT_CONTEXT } from "../../Contexts/DataContext";
 
