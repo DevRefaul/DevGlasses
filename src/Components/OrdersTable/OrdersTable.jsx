@@ -35,7 +35,7 @@ const OrdersTable = ({ orders }) => {
                   }}
                   className="px-6 py-2 bg-cyan-200 rounded-lg mx-2"
                 >
-                  Regular Delivery
+                  Regular
                 </button>
                 <button
                   onClick={() => {
@@ -47,7 +47,7 @@ const OrdersTable = ({ orders }) => {
                   }}
                   className="px-6 py-2 bg-green-200 rounded-lg mx-2"
                 >
-                  Express Delivery
+                  Express
                 </button>
               </td>
             </tr>
