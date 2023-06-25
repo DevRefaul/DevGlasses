@@ -2,7 +2,6 @@ import React from "react";
 import "../OrdersTable/OrdersTable.css";
 
 const DeliveryTable = ({ orders }) => {
-  console.log(orders);
   return (
     <>
       <table>

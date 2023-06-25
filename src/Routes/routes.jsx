@@ -2,9 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from "../Pages/Home/Home";
 import Root from "../Components/Root/Root";
 import AllOrders from "../Pages/AllOrders/AllOrders";
-import ExpressDelivey from "../Pages/ExpressDelivey/ExpressDelivey";
-import RegularDelivey from "../Pages/RegularDelivey/RegularDelivey";
 import SingleProductPage from "../Pages/SingleProductPage/SingleProductPage";
+import ExpressDelivery from "../Pages/ExpressDelivery/ExpressDelivery";
+import RegularDelivery from "../Pages/RegularDelivey/RegularDelivey";
 
 const routes = createBrowserRouter([
   {
@@ -26,11 +26,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "/expressdelivery",
-        element: <ExpressDelivey />,
+        element: <ExpressDelivery />,
       },
       {
         path: "/regulardelivery",
-        element: <RegularDelivey />,
+        element: <RegularDelivery />,
       },
     ],
   },

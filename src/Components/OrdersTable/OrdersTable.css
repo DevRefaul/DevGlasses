@@ -3,6 +3,10 @@ table {
     border-collapse: collapse;
     width: 100%;
 }
+table tbody tr{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
 
 td,
 th {
