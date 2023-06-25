@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useReducer, useState } from "react";
 import ItemCard from "../../Components/ItemCard/ItemCard";
-import { getAllGlasses } from "../../Utils/utils";
 import { PRODUCT_CONTEXT } from "../../Contexts/DataContext";
 
 const Home = () => {

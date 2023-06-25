@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
 import initialState from "../../Reducer/Store";
 import reducer from "../../Reducer/reducer";
-import { PLACE_ORDER } from "../../Reducer/actions";
+import { actionTypes } from "../../Reducer/actions";
 
 const ItemCard = ({ product }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -34,7 +34,7 @@ const ItemCard = ({ product }) => {
           </button>
           <button
             onClick={() =>
-              dispatch({ type: PLACE_ORDER, payload: { product } })
+              dispatch({ type: actionTypes.PLACE_ORDER, payload: { product } })
             }
             className="px-4 h-10 rounded-lg bg-cyan-400 mt-4 text-white"
           >
