@@ -28,7 +28,7 @@ const ItemCard = ({ product }) => {
             </Link>
           </button>
           <button className="px-4 h-10 rounded-lg bg-cyan-400 mt-4 text-white">
-            <Link to={``}>Buy Now</Link>
+            <Link to={``}>Order Now</Link>
           </button>
         </div>
       </div>
