@@ -8,10 +8,10 @@ const DataContext = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   useEffect(() => {
-    fetch("../../public/glasses.json")
+    fetch("./glasses.json")
       .then((res) => res.json())
       .then((data) => dispatch({ type: actionTypes.PRODUCTS, payload: data }))
-      .catch((err) => console.error(err));
+      .catch((error) => console.error(error));
   }, []);
 
   const value = {
