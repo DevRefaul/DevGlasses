@@ -17,7 +17,7 @@ const DeliveryTable = ({ orders }) => {
             <tr key={order._id}>
               <td>{order.Name}</td>
               <td>{order.Price}</td>
-              <td>{order?.Qunatity ? order.quantity : 1}</td>
+              <td>{order?.Qunatity}</td>
               <td className="flex justify-center">
                 <button className="px-6 py-2 bg-cyan-300 rounded-lg mx-2">
                   Pay_Now

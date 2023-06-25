@@ -15,18 +15,6 @@ const reducer = (state = initialState, action) => {
         products: action.payload,
       };
       case actionTypes.PLACE_ORDER:
-          
-//           let product = action.payload;
-          
-//           const updatedProduct = state.orders.map(order => {
-//               if (order._id === product._id) {
-//                   console.log(order)
-//               } else {
-//                   console.log(order + "else block")
-//               }
-//           } )
-// // console.log(updatedProduct)
-
       return {
         ...state,
           orders: [...state.orders, action.payload]
