@@ -2,12 +2,14 @@ import React, { useContext, useReducer } from "react";
 import { Link } from "react-router-dom";
 import { actionTypes } from "../../Reducer/actions";
 import { PRODUCT_CONTEXT } from "../../Contexts/DataContext";
+import { Toaster, toast } from "react-hot-toast";
 
 const ItemCard = ({ product }) => {
   const { dispatch } = useContext(PRODUCT_CONTEXT);
 
   return (
     <div className="relative flex flex-col justify-between rounded-2xl w-auto h-full bg-cyan-50 shadow-xl">
+      <Toaster />
       <figure className="px-10 pt-10">
         <img
           src={product.Image}
@@ -32,12 +34,13 @@ const ItemCard = ({ product }) => {
             </Link>
           </button>
           <button
-            onClick={() =>
+            onClick={() => {
               dispatch({
                 type: actionTypes.PLACE_ORDER,
                 payload: product,
-              })
-            }
+              });
+              return toast.success("Item Added To All Orders");
+            }}
             className="px-4 h-10 rounded-lg bg-cyan-400 mt-4 text-white"
           >
             <Link to={``}>Order Now</Link>

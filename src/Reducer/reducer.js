@@ -15,9 +15,16 @@ const reducer = (state = initialState, action) => {
         products: action.payload,
       };
       case actionTypes.PLACE_ORDER:
+          
+          
+          
+          let product = action.payload;
+        //   const updatedProduct = state.orders.map(order => order._id === product._id ? product.Quantity = product.Quantity++ : )
+console.log(updatedProduct)
+
       return {
         ...state,
-          orders: [...state.orders, action.payload]
+          orders: [...state.orders, product]
       };
       case actionTypes.REGULAR_DELIVERY:
           
