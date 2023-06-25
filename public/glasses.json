@@ -6,7 +6,7 @@
       "Name": "RAVEN (ANTI-BLUE)",
       "Price": 1150,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2020/08/RAVEN-front.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -36,7 +36,7 @@
       "Name": "ASTER (ANTI-BLUE)",
       "Price": 1150,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2020/08/ASTER-front.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -66,7 +66,7 @@
       "Name": "JESTER (ANTI-BLUE)",
       "Price": 1050,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2020/08/JESTER-front.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -85,7 +85,7 @@
       "Name": "THRESH (ANTI-BLUE)",
       "Price": 1150,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2020/08/THRESH-front.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -115,7 +115,7 @@
       "Name": "REDUX (ANTI-BLUE)",
       "Price": 1150,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2020/08/REDUX-front.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -145,7 +145,7 @@
       "Name": "QUEST BLACK EYEGLASS (ANTI-BLUE)",
       "Price": 1350,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2022/04/Quest-Black-Eyeglass.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -175,7 +175,7 @@
       "Name": "HANNIBAL",
       "Price": 1350,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2022/04/HANNIBAL-EYEGLASSES-FRONT.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -205,7 +205,7 @@
       "Name": "GRACE BLACK EYEGLASS",
       "Price": 950,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2023/05/GRACE-BLACK-Front.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -235,7 +235,7 @@
       "Name": "BENOIT SILVER BLACK (ANTI-BLUE)",
       "Price": 1350,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2022/04/Benoit-Silver-Black-1.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
@@ -265,7 +265,7 @@
       "Name": "BENOIT BLACK (ANTI-BLUE)",
       "Price": 1350,
       "Image":"https://lunettes.com.bd/wp-content/uploads/2022/04/Benoit-Black-1.jpg",
-      "Lens Information": [
+      "LensInformation": [
         {
           "Anti-blue Lens With Power": "Anti-Reflective(AR) coating, UV Protection, Blue Light Blocking Coating"
         },
