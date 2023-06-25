@@ -1,11 +1,11 @@
-import React, { useReducer } from "react";
+import React, { useContext, useReducer } from "react";
 import { Link } from "react-router-dom";
-import initialState from "../../Reducer/Store";
-import reducer from "../../Reducer/reducer";
+import reducer, { initialState } from "../../Reducer/reducer";
 import { actionTypes } from "../../Reducer/actions";
+import { PRODUCT_CONTEXT } from "../../Contexts/DataContext";
 
 const ItemCard = ({ product }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const { dispatch } = useContext(PRODUCT_CONTEXT);
 
   return (
     <div className="relative flex flex-col justify-between rounded-2xl w-auto h-full bg-cyan-50 shadow-xl">
@@ -34,7 +34,10 @@ const ItemCard = ({ product }) => {
           </button>
           <button
             onClick={() =>
-              dispatch({ type: actionTypes.PLACE_ORDER, payload: { product } })
+              dispatch({
+                type: actionTypes.PLACE_ORDER,
+                payload: product,
+              })
             }
             className="px-4 h-10 rounded-lg bg-cyan-400 mt-4 text-white"
           >

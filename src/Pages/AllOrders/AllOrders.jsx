@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from "react";
+import { PRODUCT_CONTEXT } from "../../Contexts/DataContext";
 
 const AllOrders = () => {
-    return (
-        <div>
-            <h2>This is AllOrders page</h2>
-        </div>
-    );
+  const { state } = useContext(PRODUCT_CONTEXT);
+
+  return (
+    <div>
+      <h2>This is AllOrders page</h2>
+    </div>
+  );
 };
 
 export default AllOrders;

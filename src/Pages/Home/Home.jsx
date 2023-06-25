@@ -3,7 +3,9 @@ import ItemCard from "../../Components/ItemCard/ItemCard";
 import { PRODUCT_CONTEXT } from "../../Contexts/DataContext";
 
 const Home = () => {
-  const { products } = useContext(PRODUCT_CONTEXT);
+  const {
+    state: { products },
+  } = useContext(PRODUCT_CONTEXT);
 
   return (
     <div className="w-[80%] mx-auto">
