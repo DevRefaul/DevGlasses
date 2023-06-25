@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useReducer } from "react";
 import { Link } from "react-router-dom";
+import initialState from "../../Reducer/Store";
+import reducer from "../../Reducer/reducer";
+import { PLACE_ORDER } from "../../Reducer/actions";
 
 const ItemCard = ({ product }) => {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
     <div className="relative flex flex-col justify-between rounded-2xl w-auto h-full bg-cyan-50 shadow-xl">
       <figure className="px-10 pt-10">
@@ -27,7 +32,12 @@ const ItemCard = ({ product }) => {
               See Details
             </Link>
           </button>
-          <button className="px-4 h-10 rounded-lg bg-cyan-400 mt-4 text-white">
+          <button
+            onClick={() =>
+              dispatch({ type: PLACE_ORDER, payload: { product } })
+            }
+            className="px-4 h-10 rounded-lg bg-cyan-400 mt-4 text-white"
+          >
             <Link to={``}>Order Now</Link>
           </button>
         </div>
