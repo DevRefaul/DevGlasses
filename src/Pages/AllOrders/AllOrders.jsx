@@ -10,7 +10,7 @@ const AllOrders = () => {
       <h2 className="text-xl font-semibold my-8 text-center">All Orders</h2>
 
       <div>
-        <OrdersTable />
+        <OrdersTable orders={state.orders} />
       </div>
     </div>
   );

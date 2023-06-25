@@ -3,8 +3,8 @@ import { actionTypes } from "./actions";
 export const initialState = {
   products: [],
   orders: [],
-  expressDevliver: [],
   regularDelivery: [],
+  expressDevlivery: [],
 };
 
 const reducer = (state = initialState, action) => {
@@ -19,10 +19,24 @@ const reducer = (state = initialState, action) => {
         ...state,
           orders: [...state.orders, action.payload]
       };
-    case actionTypes.REGULAR_DELIVERY:
-      return {};
-    case actionTypes.EXPRESS_DELIVERY:
-      return {};
+      case actionTypes.REGULAR_DELIVERY:
+          
+          const regItem = action.payload;
+          const removeRegularDeliveryItem = state.orders.filter( order => order._id !== regItem._id)
+          
+          return {
+              ...state,
+              regularDelivery: [...state.regularDelivery, action.payload],
+              orders : removeRegularDeliveryItem
+      };
+      case actionTypes.EXPRESS_DELIVERY:
+        const expressItem = action.payload;
+        const removeExpressDeliveryItem = state.orders.filter( order => order._id !== expressItem._id)
+          return {
+          ...state,
+              expressDevlivery: [...state.expressDevlivery, action.payload],
+              orders : removeExpressDeliveryItem
+      };
     default:
       return state;
   }
