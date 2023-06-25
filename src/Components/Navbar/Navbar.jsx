@@ -1,17 +1,18 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/favicon.png";
 
 const Navbar = () => {
   return (
     <nav className="flex justify-between items-center bg-cyan-50 h-[80px]">
-      <div className="p-4 flex items-center">
-        {" "}
-        <img src={logo} alt="Website Logo" />{" "}
-        <h4 className="text-lg font-serif font-semibold text-cyan-600 mx-2">
-          DEV GLASSES
-        </h4>{" "}
-      </div>
+      <Link to="/">
+        <div className="p-4 flex items-center">
+          <img src={logo} alt="Website Logo" />{" "}
+          <h4 className="text-lg font-serif font-semibold text-cyan-600 mx-2">
+            DEV GLASSES
+          </h4>
+        </div>
+      </Link>
       <div className="p-4">
         <ul className="flex" id="navitems">
           <li className="nav-item list-none  ">
