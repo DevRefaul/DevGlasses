@@ -5,14 +5,14 @@ import logo from "../../assets/favicon.png";
 const Navbar = () => {
   return (
     <nav className="flex justify-between flex-wrap items-center bg-cyan-50 h-[120px] md:h-[80px]">
-      <Link to="/">
-        <div className="p-4 flex items-center">
+      <div className="flex justify-center w-full md:w-auto">
+        <Link to="/" className="p-4 flex items-center">
           <img src={logo} alt="Website Logo" />{" "}
           <h4 className="text-lg font-serif font-semibold text-cyan-600 mx-2">
             DEV GLASSES
           </h4>
-        </div>
-      </Link>
+        </Link>
+      </div>
       <div className="p-4 flex justify-center w-full md:w-auto">
         <ul className="flex" id="navitems">
           <li className="nav-item list-none  ">
