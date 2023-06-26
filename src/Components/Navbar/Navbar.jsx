@@ -4,7 +4,7 @@ import logo from "../../assets/favicon.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center bg-cyan-50 h-[80px]">
+    <nav className="flex justify-between flex-wrap items-center bg-cyan-50 h-[120px] md:h-[80px]">
       <Link to="/">
         <div className="p-4 flex items-center">
           <img src={logo} alt="Website Logo" />{" "}
@@ -13,7 +13,7 @@ const Navbar = () => {
           </h4>
         </div>
       </Link>
-      <div className="p-4">
+      <div className="p-4 flex justify-center w-full md:w-auto">
         <ul className="flex" id="navitems">
           <li className="nav-item list-none  ">
             <NavLink
